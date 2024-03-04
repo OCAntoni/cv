@@ -28,6 +28,7 @@ time, mark, audio, video, button, select {
     border: none; 
     border-radius: 5px; 
     cursor: pointer;
+    transition: 0.3s;
     @media (max-width: 600px) {
        position: static;
        margin: 0 auto;
@@ -36,6 +37,13 @@ time, mark, audio, video, button, select {
        display: flex;
        align-items: center;
        justify-content: center;
+    }
+}
+
+.darkModeButton:hover {
+    background-color: #555;
+    @media (max-width: 600px) {
+        background-color: #333;
     }
 }
 
@@ -49,6 +57,7 @@ time, mark, audio, video, button, select {
     border: none; 
     border-radius: 5px; 
     cursor: pointer;
+    transition: 0.3s;
     @media (max-width: 600px) {
         position: static;
         margin: 0 auto;
@@ -57,6 +66,13 @@ time, mark, audio, video, button, select {
         display: flex;
         align-items: center;
         justify-content: center;
+     }
+}
+
+.lightModeButton:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    @media (max-width: 600px) {
+        background-color:  #fff; 
      }
 }
 
@@ -118,6 +134,7 @@ ul {
 
 .name {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     border-bottom: 3px solid #137DC5;
@@ -125,6 +142,23 @@ ul {
      flex-direction: column;  
     }
 }
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link i {
+   font-size: 30px;
+   color: #137DC5;
+   transition: 0.3s;
+}
+
+.social-link i:hover {
+    color: #3CA9FF;
+    font-size: 32px;
+ }
 
 .myWork {
     display: flex;
