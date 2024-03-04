@@ -27,7 +27,16 @@ time, mark, audio, video, button, select {
     color: #fff; 
     border: none; 
     border-radius: 5px; 
-    cursor: pointer; 
+    cursor: pointer;
+    @media (max-width: 600px) {
+       position: static;
+       margin: 0 auto;
+       margin-bottom: 20px;
+       width: 33%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
 }
 
 .lightModeButton {
@@ -39,7 +48,16 @@ time, mark, audio, video, button, select {
     color: #333; 
     border: none; 
     border-radius: 5px; 
-    cursor: pointer; 
+    cursor: pointer;
+    @media (max-width: 600px) {
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
 }
 
 .lightMode {
@@ -103,6 +121,9 @@ ul {
     justify-content: center;
     text-align: center;
     border-bottom: 3px solid #137DC5;
+    @media (max-width: 600px) {
+     flex-direction: column;  
+    }
 }
 
 .myWork {
@@ -111,18 +132,34 @@ ul {
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 1px solid #137DC5;
+    @media (max-width: 600px) {
+        flex-direction: column;
+     }
+}
+
+.myWork h2 {
+    @media (max-width: 600px) {
+        text-align: center;
+     }
 }
 
 .cv-infos { 
     padding: 30px;
     display: flex;
     gap: 100px;
+    @media (max-width: 600px) {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
 }
 
 /* div about me */
 
 .about-me {
     width: 50%;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 }
 
 .text-about {
@@ -153,6 +190,9 @@ ul {
 
 .profesional {
     width: 50%;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 }
 
 /* div xp */
