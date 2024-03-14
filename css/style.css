@@ -101,6 +101,12 @@ h3 {
     border-bottom: solid 1px #137DC5;
 }
 
+h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* list */
 
 ul { 
@@ -127,6 +133,18 @@ ul {
     text-align: center;
     width: 30px; 
     height: 30px;
+    border-radius: 50%;
+    border: 1px solid #137DC5;
+    color: #137DC5;
+}
+
+.icons2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 25px; 
+    height: 25px;
     border-radius: 50%;
     border: 1px solid #137DC5;
     color: #137DC5;
@@ -198,6 +216,27 @@ ul {
 
 .text-about {
     text-align: justify;
+}
+
+.lists-skills-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    @media (max-width: 1083px) {
+        gap: 50px;
+    }
+
+    @media (max-width: 983px) {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.img-list {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
 .languages-infos {
